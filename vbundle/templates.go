@@ -63,7 +63,7 @@ import (
 var vulcanUrl string
 
 func main() {
-	log.Init([]*log.LogConfig{&log.LogConfig{Name: "console"}})
+	log.Init()
 
     r, err := registry.GetRegistry()
 	if err != nil {
